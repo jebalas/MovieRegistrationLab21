@@ -1,0 +1,28 @@
+﻿
+@model MovieViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="text-center">
+    <h1 class=" <display-4">Movie Registration Page</h1>
+    <div class="form-group">
+
+        <form asp-action="MovieResultView">
+            <label>ID </label>
+            <input asp-for="@Model.ID"><br>
+            <label>Title</label>
+            <input asp-for="@Model.Title"><br>
+            <label>Genre</label>
+            <input asp-for="@Model.Genre"><br>
+            <label>Year</label>
+            <input asp-for="@Model.Year"><br>
+            <label>Actors</label>
+            <input asp-for="@Model.Actors"><br>
+            <label>Directors</label>
+            <input asp-for="@Model.Directors"><br>
+
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
